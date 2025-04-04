@@ -33,6 +33,21 @@
             font-style: italic;
             border-left-width: 4px;
         }
+        /* Stiluri aditionale pentru tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #e5e7eb; /* gray-200 */
+            padding: 0.5rem; /* p-2 */
+            text-align: left;
+            vertical-align: top; /* Aliniere sus pentru celule */
+        }
+        th {
+            background-color: #e0e7ff; /* indigo-100 */
+        }
     </style>
 </head>
 <body class="bg-slate-50 p-4 md:p-8">
@@ -48,145 +63,160 @@
 
         <div class="mb-6">
             <h2 class="section-heading text-indigo-700 border-indigo-200">Întrebări suplimentare despre alcool</h2>
-
             <p class="section-title text-blue-700">Descrierea comportamentului anterior de consum:</p>
             <p class="text-gray-700">Între 20 și 30 de ani, a băut de 3-4 ori pe lună 3-4 beri și 2 doze duble de țuică românească, țuică de prune cu aproximativ 40% vol. alcool. A băut și mai mult uneori? Între 30 și 34 de ani a băut mai mult, 9-10 beri de 0,5 l și 2 doze duble de țuică de 3-4 ori pe lună, maxim 12 beri și 2 doze duble de țuică de 6 ori pe an. De unde știe atât de exact? A reflectat.</p>
-
-            <p class="section-title text-blue-700">Tipare de consum (singur/cu prieteni, momentul zilei):</p>
-            <p class="text-gray-700">A băut singur? Recunoaște că da, când a venit în Germania în 2018, dar de obicei cu prietenii. A băut repede? Nu. Nici pe ascuns. De la ce oră a zilei a băut alcool? De obicei după program, spre seară. Referitor la ora începerii consumului în ziua incidentului din dosar: a fost sâmbătă, era cu prietenii și au băut împreună atât de devreme; la acea vreme nu a putut spune nu.</p>
-
-            <p class="section-title text-blue-700">Dorință puternică / Sevraj:</p>
-            <p class="text-gray-700">A existat o dorință puternică sau o nevoie psihică intensă de alcool? Nu, și nu a avut niciodată simptome de sevraj.</p>
-
-            <p class="section-title text-blue-700">Control asupra consumului și consecințe:</p>
-            <p class="text-gray-700">A avut întotdeauna control asupra consumului de alcool? Nu, și aceasta a fost problema. Mai exact? Când deja băuse 1-2 beri, era greu în grupul de prieteni să spună nu. A încercat vreodată să bea puțin? Nu. A crezut că este un consum normal. Pierderi de memorie după consumul de alcool? Da.</p>
-
-            <p class="section-title text-blue-700">Efecte negative asupra vieții și personalității:</p>
-            <p class="text-gray-700">Au existat efecte negative ale alcoolului asupra condițiilor de viață și personalității? Da, dimineața avea dureri de cap, era neproductiv și obosit la muncă, se simțea slăbit. De ce a continuat totuși să bea mult alcool? A crezut că alcoolul ajută împotriva stresului și problemelor.</p>
-
-            <p class="section-title text-blue-700">Îngrijorări din partea altora:</p>
-            <p class="text-gray-700">Și-a făcut cineva griji din cauza obiceiurilor sale de consum? A avut certuri cu prietena sa. Și bunicii din România i-au spus că bea prea mult.</p>
-
-            <p class="section-title text-blue-700">Încercări de renunțare / Oprire:</p>
-            <p class="text-gray-700">A încercat vreodată să renunțe la alcool pe termen lung? Nu. A fost posibilă oprirea în orice moment? Nu a existat o constrângere de a bea, dar în grup se bea împreună.</p>
-
-            <p class="section-title text-blue-700">Motive personale pentru consum:</p>
-            <p class="text-gray-700">Au existat, pe lângă cele situaționale descrise, și motive personale pentru consum? În 2018 s-a simțit singur în Germania, a găsit acest grup și a băut împreună cu ei pentru a se simți acceptat. Ce înseamnă asta? Mama sa a murit, iar când avea 7 ani, a murit și tatăl său; a locuit la bunici, s-a simțit respins la școală, la toți ceilalți veneau părinții, el a vrut apoi să facă totul bine. Nu a vrut să arate slăbiciune. Legătura cu consumul de alcool? A încercat să reducă stresul și problemele din România. Nu a vrut să rămână singur și să nu fie respins.</p>
-
-            <p class="section-title text-blue-700">Autoevaluare din perspectiva actuală:</p>
-            <p class="text-gray-700">Cum vede acum modul său anterior de a consuma alcool? A băut prea mult alcool. Pe o scară de la 1 la 10, a fost la 8. Cum a ajuns la această notă pe scală? A învățat asta de la consilierul MPU. Ce se ascunde în spate? Nu a putut gestiona corect situația. Nu este dependent de alcool, nu a băut nici dimineața, nu a tremurat. Atunci a reprimat problemele cu alcool. Întrebat din nou ce crede el însuși despre comportamentul său de consum de atunci? Nu a fost responsabil și nu s-a gândit niciodată la renunțare.</p>
+             <p class="section-title text-blue-700">Tipare de consum (singur/cu prieteni, momentul zilei):</p>
+             <p class="text-gray-700">A băut singur? Recunoaște că da, când a venit în Germania în 2018, dar de obicei cu prietenii. A băut repede? Nu. Nici pe ascuns. De la ce oră a zilei a băut alcool? De obicei după program, spre seară. Referitor la ora începerii consumului în ziua incidentului din dosar: a fost sâmbătă, era cu prietenii și au băut împreună atât de devreme; la acea vreme nu a putut spune nu.</p>
+             <p class="section-title text-blue-700">Dorință puternică / Sevraj:</p>
+             <p class="text-gray-700">A existat o dorință puternică sau o nevoie psihică intensă de alcool? Nu, și nu a avut niciodată simptome de sevraj.</p>
+             <p class="section-title text-blue-700">Control asupra consumului și consecințe:</p>
+             <p class="text-gray-700">A avut întotdeauna control asupra consumului de alcool? Nu, și aceasta a fost problema. Mai exact? Când deja băuse 1-2 beri, era greu în grupul de prieteni să spună nu. A încercat vreodată să bea puțin? Nu. A crezut că este un consum normal. Pierderi de memorie după consumul de alcool? Da.</p>
+             <p class="section-title text-blue-700">Efecte negative asupra vieții și personalității:</p>
+             <p class="text-gray-700">Au existat efecte negative ale alcoolului asupra condițiilor de viață și personalității? Da, dimineața avea dureri de cap, era neproductiv și obosit la muncă, se simțea slăbit. De ce a continuat totuși să bea mult alcool? A crezut că alcoolul ajută împotriva stresului și problemelor.</p>
+             <p class="section-title text-blue-700">Îngrijorări din partea altora:</p>
+             <p class="text-gray-700">Și-a făcut cineva griji din cauza obiceiurilor sale de consum? A avut certuri cu prietena sa. Și bunicii din România i-au spus că bea prea mult.</p>
+             <p class="section-title text-blue-700">Încercări de renunțare / Oprire:</p>
+             <p class="text-gray-700">A încercat vreodată să renunțe la alcool pe termen lung? Nu. A fost posibilă oprirea în orice moment? Nu a existat o constrângere de a bea, dar în grup se bea împreună.</p>
+             <p class="section-title text-blue-700">Motive personale pentru consum:</p>
+             <p class="text-gray-700">Au existat, pe lângă cele situaționale descrise, și motive personale pentru consum? În 2018 s-a simțit singur în Germania, a găsit acest grup și a băut împreună cu ei pentru a se simți acceptat. Ce înseamnă asta? Mama sa a murit, iar când avea 7 ani, a murit și tatăl său; a locuit la bunici, s-a simțit respins la școală, la toți ceilalți veneau părinții, el a vrut apoi să facă totul bine. Nu a vrut să arate slăbiciune. Legătura cu consumul de alcool? A încercat să reducă stresul și problemele din România. Nu a vrut să rămână singur și să nu fie respins.</p>
+             <p class="section-title text-blue-700">Autoevaluare din perspectiva actuală:</p>
+             <p class="text-gray-700">Cum vede acum modul său anterior de a consuma alcool? A băut prea mult alcool. Pe o scară de la 1 la 10, a fost la 8. Cum a ajuns la această notă pe scală? A învățat asta de la consilierul MPU. Ce se ascunde în spate? Nu a putut gestiona corect situația. Nu este dependent de alcool, nu a băut nici dimineața, nu a tremurat. Atunci a reprimat problemele cu alcool. Întrebat din nou ce crede el însuși despre comportamentul său de consum de atunci? Nu a fost responsabil și nu s-a gândit niciodată la renunțare.</p>
         </div>
 
          <div class="mb-6">
             <h2 class="section-heading text-indigo-700 border-indigo-200">Comportamentul de consum după incident și planuri de viitor</h2>
-
-            <p class="section-title text-blue-700">Comportamentul de consum după incidentul din dosar:</p>
-            <p class="text-gray-700">Accidentul a fost punctul de cotitură. A continuat să bea, dar din ce în ce mai puțin. Renunță la alcool de la Revelionul 2022. De ce nu a renunțat imediat? Din cauza supărării legate de permisul de conducere, nu s-a gândit imediat la renunțare. La insistențe: A continuat să combată problemele cu alcoolul. Mai bea 3 beri pe săptămână, câte 1 bere per ocazie. Nu a fost ușor, dar nici o problemă fizică.</p>
-
-            <p class="section-title text-blue-700">Motivele renunțării actuale:</p>
-            <p class="text-gray-700">De ce renunță acum? A observat că se simte mai bine, este mai productiv la muncă și nu mai are dureri de cap. De ce nu a menținut un consum redus? A fost un pericol în trafic, s-ar fi putut întâmpla lucruri mult mai grave. Nu a putut încă gestiona complet controlul. A băut mai mult uneori (după ce a redus)? Nu. Atunci de ce spune că nu a putut gestiona controlul? Nu a putut spune nu, a mai băut cu prietenii. Încercări de convingere (să bea)? De Revelion da, dar a spus că și-a văzut greșelile și nu mai vrea să-și pună viața sa și a altora în pericol.</p>
-
-            <p class="section-title text-blue-700">Excepții de la abstinență și gestionarea situațiilor de risc:</p>
-            <p class="text-gray-700">Au existat excepții de la renunțarea la alcool? Nu. Întrebat din nou despre posibile încercări de convingere: Da. Au existat situații riscante. A spus că nu mai bea, să i se ofere suc sau apă. Încercări de convingere până astăzi? Nu mai are acel cerc de prieteni, iar în restaurant cu noii săi prieteni, se mai întreabă uneori, dar el spune nu. Nu bea nici bere fără alcool.</p>
-
-            <p class="section-title text-blue-700">Gestionarea problemelor actuale:</p>
-            <p class="text-gray-700">Referitor la mențiunea că problemele încă existau: Vorbește cu prietena sa, are un nou hobby, are un mic garaj și îi place să repare mașini. Se plimbă cu prietena sa în parc. Referitor la mențiunea că astfel nu se rezolvă problemele: Totul s-a schimbat. Se înțelege mai bine cu prietena sa, vorbește mai deschis cu ea, inclusiv despre problemele iminente. În noul cerc de prieteni nu se consumă alcool. Reamintit de afirmația anterioară că i se mai oferă ceva și întrebat dacă este într-adevăr așa? Se referă la cercul de prieteni format din el, prietena sa, mama ei și persoanele de la care primește acum de lucru. Acum este liber profesionist (selbstständig).</p>
-
-            <p class="section-title text-blue-700">Planuri de viitor privind consumul de alcool:</p>
-            <p class="text-gray-700">Riscul de recidivă este minim la el, pentru că a învățat ce înseamnă alcoolul pentru organism. Referitor la întrebare: Nu poate garanta renunțarea 100%. Când și-ar putea imagina un consum? Nu și-l mai poate imagina. Referitor la contradicție: Există situații riscante în viață, de ex. un deces sau pierderea locului de muncă/firmei.</p>
-
-            <p class="section-title text-blue-700">Necesitatea abstinenței vs. consum controlat:</p>
-            <p class="text-gray-700">Întrebat din nou: Vrea să renunțe complet. Este necesar acest lucru sau ar putea gestiona și un consum controlat de alcool? Vrea să renunțe.</p>
-
+             <p class="section-title text-blue-700">Comportamentul de consum după incidentul din dosar:</p>
+             <p class="text-gray-700">Accidentul a fost punctul de cotitură. A continuat să bea, dar din ce în ce mai puțin. Renunță la alcool de la Revelionul 2022. De ce nu a renunțat imediat? Din cauza supărării legate de permisul de conducere, nu s-a gândit imediat la renunțare. La insistențe: A continuat să combată problemele cu alcoolul. Mai bea 3 beri pe săptămână, câte 1 bere per ocazie. Nu a fost ușor, dar nici o problemă fizică.</p>
+             <p class="section-title text-blue-700">Motivele renunțării actuale:</p>
+             <p class="text-gray-700">De ce renunță acum? A observat că se simte mai bine, este mai productiv la muncă și nu mai are dureri de cap. De ce nu a menținut un consum redus? A fost un pericol în trafic, s-ar fi putut întâmpla lucruri mult mai grave. Nu a putut încă gestiona complet controlul. A băut mai mult uneori (după ce a redus)? Nu. Atunci de ce spune că nu a putut gestiona controlul? Nu a putut spune nu, a mai băut cu prietenii. Încercări de convingere (să bea)? De Revelion da, dar a spus că și-a văzut greșelile și nu mai vrea să-și pună viața sa și a altora în pericol.</p>
+             <p class="section-title text-blue-700">Excepții de la abstinență și gestionarea situațiilor de risc:</p>
+             <p class="text-gray-700">Au existat excepții de la renunțarea la alcool? Nu. Întrebat din nou despre posibile încercări de convingere: Da. Au existat situații riscante. A spus că nu mai bea, să i se ofere suc sau apă. Încercări de convingere până astăzi? Nu mai are acel cerc de prieteni, iar în restaurant cu noii săi prieteni, se mai întreabă uneori, dar el spune nu. Nu bea nici bere fără alcool.</p>
+             <p class="section-title text-blue-700">Gestionarea problemelor actuale:</p>
+             <p class="text-gray-700">Referitor la mențiunea că problemele încă existau: Vorbește cu prietena sa, are un nou hobby, are un mic garaj și îi place să repare mașini. Se plimbă cu prietena sa în parc. Referitor la mențiunea că astfel nu se rezolvă problemele: Totul s-a schimbat. Se înțelege mai bine cu prietena sa, vorbește mai deschis cu ea, inclusiv despre problemele iminente. În noul cerc de prieteni nu se consumă alcool. Reamintit de afirmația anterioară că i se mai oferă ceva și întrebat dacă este într-adevăr așa? Se referă la cercul de prieteni format din el, prietena sa, mama ei și persoanele de la care primește acum de lucru. Acum este liber profesionist (selbstständig).</p>
+             <p class="section-title text-blue-700">Planuri de viitor privind consumul de alcool:</p>
+             <p class="text-gray-700">Riscul de recidivă este minim la el, pentru că a învățat ce înseamnă alcoolul pentru organism. Referitor la întrebare: Nu poate garanta renunțarea 100%. Când și-ar putea imagina un consum? Nu și-l mai poate imagina. Referitor la contradicție: Există situații riscante în viață, de ex. un deces sau pierderea locului de muncă/firmei.</p>
+             <p class="section-title text-blue-700">Necesitatea abstinenței vs. consum controlat:</p>
+             <p class="text-gray-700">Întrebat din nou: Vrea să renunțe complet. Este necesar acest lucru sau ar putea gestiona și un consum controlat de alcool? Vrea să renunțe.</p>
              <p class="section-title text-blue-700">Factori de risc pentru consum:</p>
              <p class="text-gray-700">Ce ar putea duce la un consum? În prezent nu are niciun risc personal.</p>
-
-            <p class="section-title text-blue-700">Strategii pentru evitarea consumului pe termen lung:</p>
-            <p class="text-gray-700">Cum poate fi evitat permanent un nou consum de alcool? În situații speciale bea doar apă și suc, refuză alcoolul la oferte și dacă se insistă, este posibil să plece. Alte strategii? Timpul pe care îl petrecea înainte cu alcoolul îl umple cu noul său hobby, citește pe internet și nu se mai gândește la alcool.</p>
-
-            <p class="section-title text-blue-700">Reflecții finale (1):</p>
-            <p class="text-gray-700">Referitor la vârsta sa încă relativ tânără: Se simte mai bine, totul este diferit. Gândește mult mai clar.</p>
+             <p class="section-title text-blue-700">Strategii pentru evitarea consumului pe termen lung:</p>
+             <p class="text-gray-700">Cum poate fi evitat permanent un nou consum de alcool? În situații speciale bea doar apă și suc, refuză alcoolul la oferte și dacă se insistă, este posibil să plece. Alte strategii? Timpul pe care îl petrecea înainte cu alcoolul îl umple cu noul său hobby, citește pe internet și nu se mai gândește la alcool.</p>
+             <p class="section-title text-blue-700">Reflecții finale (1):</p>
+             <p class="text-gray-700">Referitor la vârsta sa încă relativ tânără: Se simte mai bine, totul este diferit. Gândește mult mai clar.</p>
              <p class="text-gray-700">I s-a retras permisul de conducere și asta a fost bine, altfel viața sa nu s-ar fi schimbat.</p>
         </div>
 
         <div class="mb-6">
             <h2 class="section-heading text-indigo-700 border-indigo-200">Aspecte legate de legislația rutieră/penală</h2>
-
-            <p class="section-title text-blue-700">Condusul după pierderea permisului:</p>
-            <p class="text-gray-700">Nu a condus permanent după pierderea permisului. Referitor la mențiunea că a condus la muncă și, de regulă, se lucrează regulat: A găsit colegi noi cu permis și a mers împreună cu ei.</p>
-            <p class="text-gray-700">După ce a fost prins, nu a mai condus fără permis.</p>
-
-            <p class="section-title text-blue-700">Tentația de a conduce fără permis:</p>
-            <p class="text-gray-700">A fost vreodată tentat să o facă din nou? Da, dar s-a gândit la consecințe și a cerut apoi ajutorul unui coleg.</p>
-
-            <p class="section-title text-blue-700">Viteza și ignorarea legilor:</p>
-            <p class="text-gray-700">A condus mai des cu viteză excesivă, ca în ziua incidentului? Asta a fost din cauza alcoolului. De ce a condus atunci mai des fără permis, deși știa mai bine? A ignorat consecințele și nu a respectat legea. Cât de importante erau pentru el legile și regulile de circulație atunci? Atunci s-a gândit doar la sine și nu la lege. Referitor la mențiunea că a încălcat regulile cu bună știință: Când a condus, nu s-a gândit la legi. Legile aveau o valoare, dar le-a ignorat.</p>
-
-            <p class="section-title text-blue-700">Motivele comportamentului greșit:</p>
-            <p class="text-gray-700">De ce a putut ajunge la aceste comportamente greșite? În acea zi nu a vrut să rateze o întâlnire importantă. Nu s-a gândit la consecințe.</p>
-
-            <p class="section-title text-blue-700">Situația actuală a condusului (liber profesionist):</p>
-            <p class="text-gray-700">Cum procedează astăzi, mai ales că este liber profesionist? Are un angajat cu permis care conduce. În privat, conduce mama prietenei sale.</p>
-
-            <p class="section-title text-blue-700">Riscul de a acționa greșit din nou:</p>
-            <p class="text-gray-700">În ce situație vede un pericol de a acționa greșit din nou? Dacă angajatul său îl duce la un șantier și apoi pleacă la alt șantier, dar atunci poate căuta pe cineva pe șantier care poate conduce. În caz de urgență, poate apela 112.</p>
-
-            <p class="section-title text-blue-700">Informarea celorlalți despre lipsa permisului:</p>
-            <p class="text-gray-700">Știe lumea în general că nu are permis? Când a condus fără permis, nu a spus nimănui că nu are permis. După delict, a spus totul prietenei și colegilor de muncă și s-a simțit ușurat.</p>
+             <p class="section-title text-blue-700">Condusul după pierderea permisului:</p>
+             <p class="text-gray-700">Nu a condus permanent după pierderea permisului. Referitor la mențiunea că a condus la muncă și, de regulă, se lucrează regulat: A găsit colegi noi cu permis și a mers împreună cu ei.</p>
+             <p class="text-gray-700">După ce a fost prins, nu a mai condus fără permis.</p>
+             <p class="section-title text-blue-700">Tentația de a conduce fără permis:</p>
+             <p class="text-gray-700">A fost vreodată tentat să o facă din nou? Da, dar s-a gândit la consecințe și a cerut apoi ajutorul unui coleg.</p>
+             <p class="section-title text-blue-700">Viteza și ignorarea legilor:</p>
+             <p class="text-gray-700">A condus mai des cu viteză excesivă, ca în ziua incidentului? Asta a fost din cauza alcoolului. De ce a condus atunci mai des fără permis, deși știa mai bine? A ignorat consecințele și nu a respectat legea. Cât de importante erau pentru el legile și regulile de circulație atunci? Atunci s-a gândit doar la sine și nu la lege. Referitor la mențiunea că a încălcat regulile cu bună știință: Când a condus, nu s-a gândit la legi. Legile aveau o valoare, dar le-a ignorat.</p>
+             <p class="section-title text-blue-700">Motivele comportamentului greșit:</p>
+             <p class="text-gray-700">De ce a putut ajunge la aceste comportamente greșite? În acea zi nu a vrut să rateze o întâlnire importantă. Nu s-a gândit la consecințe.</p>
+             <p class="section-title text-blue-700">Situația actuală a condusului (liber profesionist):</p>
+             <p class="text-gray-700">Cum procedează astăzi, mai ales că este liber profesionist? Are un angajat cu permis care conduce. În privat, conduce mama prietenei sale.</p>
+             <p class="section-title text-blue-700">Riscul de a acționa greșit din nou:</p>
+             <p class="text-gray-700">În ce situație vede un pericol de a acționa greșit din nou? Dacă angajatul său îl duce la un șantier și apoi pleacă la alt șantier, dar atunci poate căuta pe cineva pe șantier care poate conduce. În caz de urgență, poate apela 112.</p>
+             <p class="section-title text-blue-700">Informarea celorlalți despre lipsa permisului:</p>
+             <p class="text-gray-700">Știe lumea în general că nu are permis? Când a condus fără permis, nu a spus nimănui că nu are permis. După delict, a spus totul prietenei și colegilor de muncă și s-a simțit ușurat.</p>
         </div>
 
         <div class="mb-6">
              <h2 class="section-heading text-indigo-700 border-indigo-200">Consiliere și concluzii preliminare</h2>
-
-            <p class="section-title text-blue-700">Învățăminte din consiliere:</p>
-            <p class="text-gray-700">A învățat să gestioneze situațiile și să vorbească deschis. Dacă se întâmplă ceva și este sub stres, trebuie să vorbească deschis cu prietena sa, prietenii săi, iar angajatul său este și el o persoană de încredere. A învățat că nu poate face față la tot singur. Și consilierul său MPU este acolo pentru el.</p>
-
-            <p class="section-title text-blue-700">Completări la discuție:</p>
-            <p class="text-gray-700">Se bucură că este aici și că a învățat din greșeli. Poate că fără MPU nu ar fi învățat nimic, a fost o lecție.</p>
+              <p class="section-title text-blue-700">Învățăminte din consiliere:</p>
+              <p class="text-gray-700">A învățat să gestioneze situațiile și să vorbească deschis. Dacă se întâmplă ceva și este sub stres, trebuie să vorbească deschis cu prietena sa, prietenii săi, iar angajatul său este și el o persoană de încredere. A învățat că nu poate face față la tot singur. Și consilierul său MPU este acolo pentru el.</p>
+              <p class="section-title text-blue-700">Completări la discuție:</p>
+              <p class="text-gray-700">Se bucură că este aici și că a învățat din greșeli. Poate că fără MPU nu ar fi învățat nimic, a fost o lecție.</p>
         </div>
 
          <div class="mb-6">
             <h2 class="section-heading text-indigo-700 border-indigo-200">Fazit / Concluzie</h2>
-
-            <p class="text-gray-700">Clientul a încercat să răspundă la întrebări, însă a lipsit profunzimea. Totul pare învățat pe de rost, fără să existe o reflecție personală, sinceră și credibilă. Declarațiile nu par complet veridice și nici suficient de stabile pentru o prognoză favorabilă la evaluarea psihologică MPU.</p>
-
-            <p class="section-title text-blue-700">Despre întrebările legate de consumul de alcool:</p>
-            <p class="text-gray-700">Mai întâi trebuie verificat în ce măsură datele colectate pot fi supuse unei evaluări. În acest scop, este necesară o disponibilitate adecvată de cooperare și o deschidere din partea persoanei examinate, pentru a putea obține informațiile suplimentare esențiale. Datele colectate trebuie să fie coerente, plauzibile, să se alinieze cunoștințelor științifice, experienței consolidate și să fie în concordanță cu conținutul dosarului.</p>
-            <p class="text-gray-700">În general, persoana examinată s-a arătat cooperantă în conversație. Domnul Mincu a putut descrie în mod realist cantitățile de alcool consumate în raport cu toleranța sa. Pe baza declarațiilor sale și a altor informații, toleranța la alcool poate fi înțeleasă.</p>
-            <p class="text-gray-700">Totuși, domnul Mincu a tendințat în special în cadrul explorării consumului de alcool spre explicații generale, adaptate scopului, care erau puțin concludente și adesea construite pe exemple standardizate de tipul:</p>
-            <blockquote class="border-indigo-300 text-indigo-600">„Am condus sub influența alcoolului, nu am respectat legea și m-am gândit doar la mine. Au existat și alte incidente? Am fost egoist și m-am gândit doar la mine.”</blockquote>
-            <blockquote class="border-indigo-300 text-indigo-600">„Am consumat alcool, nu am respectat legea și am condus sub influență.”</blockquote>
-            <blockquote class="border-indigo-300 text-indigo-600">„Am acționat egoist, m-am gândit doar la mine și nu la ceilalți și la pericole.”</blockquote>
-            <p class="text-gray-700">Astfel de formulări nu oferă o confruntare profundă, autentică cu comportamentul de consum și, prin urmare, nu pot fi considerate drept dovezi suficiente pentru o evaluare pozitivă.</p>
-            <p class="text-gray-700">Pentru a putea stabili premisele unei prognoze pozitive privind comportamentul rutier, este necesar ca persoana să poată explica într-un mod credibil și coerent cauzele și motivația comportamentului său anterior, precum și schimbările comportamentale reale care au avut loc. În cazul de față, aceste cerințe nu au fost îndeplinite.</p>
-            <p class="text-gray-700">Domnul Mincu a oferit date despre consumul său anterior care indică o toleranță crescută la alcool (de exemplu, 10 beri de 0,5 l și 2 shot-uri duble ca „obișnuință”). Apoi, a indicat pentru perioada recentă doar 3 beri și 1 shot drept maxim consumat – ceea ce nu pare plauzibil. Această descreștere bruscă și lipsa unei documentații obiective (analize, controale urinare etc.) fac ca presupusa abstinență să fie greu de crezut.</p>
-            <p class="text-gray-700">În plus, lipsesc motivele clare, sustenabile, care să fi dus la această presupusă schimbare de comportament. Împreună cu declarațiile vagi și formulările standardizate, rezultă o lipsă de credibilitate în renunțarea reală și durabilă la alcool. Astfel, nu poate fi confirmată în mod convingător nici capacitatea de autocontrol necesară pentru participarea sigură la trafic.</p>
-
-            <p class="section-title text-blue-700">Evaluarea finală a gravității istoricului de consum de alcool al domnului Mincu:</p>
-            <p class="text-gray-700">Domnul Mincu nu s-a confruntat încă deschis și radical cu consumul său anterior de alcool. A menționat o evoluție severă a consumului, însă nu a putut argumenta aceasta în mod suficient și, prin urmare, nu a fost credibil.</p>
-            <blockquote class="border-indigo-300 text-indigo-600">(La întrebarea: „Pe o scară de la 1 la 100, unde v-ați plasa?” – a răspuns: „La 80. Așa am învățat de la consilierul MPU.” Ce înseamnă asta? Nu am putut gestiona situația corect. Nu sunt dependent de alcool, dar nu am băut dimineața, nu am tremurat, nu am mințit. Doar nu m-am gândit niciodată la abstinență.”)</blockquote>
-            <p class="text-gray-700">→ Domnul Mincu nu a reușit încă să reflecteze sincer asupra comportamentului său legat de alcool și să includă în mod adecvat fundalul situației. În acest moment, nu poate fi confirmată o confruntare profundă cu problema consumului de alcool.</p>
-            <p class="text-gray-700">Domnul Mincu a susținut că, în urma unei reduceri treptate a cantității consumate, a renunțat complet la alcool după Revelionul din 2022 și a continuat abstinența până în prezent. A prezentat dovada unei abstinențe documentate pe o perioadă de 12 luni. Această renunțare pare credibilă.</p>
-
-            <p class="section-title text-blue-700">Măsuri preventive pentru viitor:</p>
-            <p class="text-gray-700">În ceea ce privește măsurile preventive pentru viitor, rămân totuși îndoieli considerabile. Domnul Mincu nu a elaborat încă o strategie suficientă de prevenire a recăderii.</p>
-            <p class="text-gray-700">Este necesar să fie cunoscute cauzele personale și factorii declanșatori ai comportamentului de consum anterior pentru a putea identifica riscurile și a dezvolta strategii individuale de prevenire. Domnul Mincu a menționat motive personale și sociale pentru consumul său:</p>
-            <blockquote class="border-indigo-300 text-indigo-600">(2018 s-a simțit singur în Germania și a găsit un grup cu care consuma alcool pentru a fi acceptat. Ce înseamnă asta? Mama i-a murit, iar când avea 7 ani a murit și tatăl său. A crescut la bunici, s-a simțit izolat la școală și a vrut mereu să demonstreze ceva, să nu arate slăbiciuni. Legătura cu alcoolul: voia să reducă stresul și să uite problemele. Nu voia să rămână singur sau să fie respins.)</blockquote>
-            <p class="text-gray-700">Domnul Mincu a reușit parțial să elaboreze aceste legături, dar nu le-a prezentat încă într-un mod clar, conștientizat și stabil. De asemenea, nu a fost demonstrată o înțelegere suficientă a riscurilor personale de recădere în viitor.</p>
-            <p class="text-gray-700">Domnul Mincu a menționat doar riscuri externe de recădere, de ex. pierderea locului de muncă sau moartea unei persoane apropiate. Însă nu a identificat încă suficient riscurile interne (declanșatori interni precum stresul, suprasolicitarea sau dorința de apartenență). Nu a explicat suficient cum poate gestiona aceste situații fără alcool. El a menționat doar în mod vag:</p>
-            <blockquote class="border-indigo-300 text-indigo-600">„Mă gândesc la ce s-ar putea întâmpla. Dacă aș consuma din nou, s-ar distruge totul. Dacă aș pierde din nou permisul sau locul de muncă…”</blockquote>
-            <p class="text-gray-700">→ O astfel de conștientizare a consecințelor nu este suficientă pentru a garanta o prevenire stabilă a recăderii. Este necesar un plan de acțiune interior, credibil, care să indice cum se poate menține în viitor abstinența de la alcool chiar și în condiții dificile.</p>
-            <p class="text-gray-700">Domnul Mincu nu a elaborat încă un astfel de plan credibil. Comportamente concrete nu au putut fi menționate decât superficial la întrebările directe</p>
-            <blockquote class="border-indigo-300 text-indigo-600">(Exemplu: Timpul pe care îl petrecea înainte cu alcool, acum îl umple cu noul său hobby, citește pe internet și nu se mai gândește la alcool).</blockquote>
-            <p class="text-gray-700">La rezumarea tuturor constatărilor obținute au rămas în continuare îndoieli semnificative privind un comportament adecvat în viitor în ceea ce privește consumul de alcool. Persistă un grad ridicat de neputință și deficite în procesarea problematicii, ceea ce indică o conștientizare insuficientă a problemei.</p>
-
+             <p class="text-gray-700">Clientul a încercat să răspundă la întrebări, însă a lipsit profunzimea. Totul pare învățat pe de rost, fără să existe o reflecție personală, sinceră și credibilă. Declarațiile nu par complet veridice și nici suficient de stabile pentru o prognoză favorabilă la evaluarea psihologică MPU.</p>
+             <p class="section-title text-blue-700">Despre întrebările legate de consumul de alcool:</p>
+             <p class="text-gray-700">Mai întâi trebuie verificat în ce măsură datele colectate pot fi supuse unei evaluări. În acest scop, este necesară o disponibilitate adecvată de cooperare și o deschidere din partea persoanei examinate, pentru a putea obține informațiile suplimentare esențiale. Datele colectate trebuie să fie coerente, plauzibile, să se alinieze cunoștințelor științifice, experienței consolidate și să fie în concordanță cu conținutul dosarului.</p>
+             <p class="text-gray-700">În general, persoana examinată s-a arătat cooperantă în conversație. Domnul Mincu a putut descrie în mod realist cantitățile de alcool consumate în raport cu toleranța sa. Pe baza declarațiilor sale și a altor informații, toleranța la alcool poate fi înțeleasă.</p>
+             <p class="text-gray-700">Totuși, domnul Mincu a tendințat în special în cadrul explorării consumului de alcool spre explicații generale, adaptate scopului, care erau puțin concludente și adesea construite pe exemple standardizate de tipul:</p>
+             <blockquote class="border-indigo-300 text-indigo-600">„Am condus sub influența alcoolului, nu am respectat legea și m-am gândit doar la mine. Au existat și alte incidente? Am fost egoist și m-am gândit doar la mine.”</blockquote>
+             <blockquote class="border-indigo-300 text-indigo-600">„Am consumat alcool, nu am respectat legea și am condus sub influență.”</blockquote>
+             <blockquote class="border-indigo-300 text-indigo-600">„Am acționat egoist, m-am gândit doar la mine și nu la ceilalți și la pericole.”</blockquote>
+             <p class="text-gray-700">Astfel de formulări nu oferă o confruntare profundă, autentică cu comportamentul de consum și, prin urmare, nu pot fi considerate drept dovezi suficiente pentru o evaluare pozitivă.</p>
+             <p class="text-gray-700">Pentru a putea stabili premisele unei prognoze pozitive privind comportamentul rutier, este necesar ca persoana să poată explica într-un mod credibil și coerent cauzele și motivația comportamentului său anterior, precum și schimbările comportamentale reale care au avut loc. În cazul de față, aceste cerințe nu au fost îndeplinite.</p>
+             <p class="text-gray-700">Domnul Mincu a oferit date despre consumul său anterior care indică o toleranță crescută la alcool (de exemplu, 10 beri de 0,5 l și 2 shot-uri duble ca „obișnuință”). Apoi, a indicat pentru perioada recentă doar 3 beri și 1 shot drept maxim consumat – ceea ce nu pare plauzibil. Această descreștere bruscă și lipsa unei documentații obiective (analize, controale urinare etc.) fac ca presupusa abstinență să fie greu de crezut.</p>
+             <p class="text-gray-700">În plus, lipsesc motivele clare, sustenabile, care să fi dus la această presupusă schimbare de comportament. Împreună cu declarațiile vagi și formulările standardizate, rezultă o lipsă de credibilitate în renunțarea reală și durabilă la alcool. Astfel, nu poate fi confirmată în mod convingător nici capacitatea de autocontrol necesară pentru participarea sigură la trafic.</p>
+             <p class="section-title text-blue-700">Evaluarea finală a gravității istoricului de consum de alcool al domnului Mincu:</p>
+             <p class="text-gray-700">Domnul Mincu nu s-a confruntat încă deschis și radical cu consumul său anterior de alcool. A menționat o evoluție severă a consumului, însă nu a putut argumenta aceasta în mod suficient și, prin urmare, nu a fost credibil.</p>
+             <blockquote class="border-indigo-300 text-indigo-600">(La întrebarea: „Pe o scară de la 1 la 100, unde v-ați plasa?” – a răspuns: „La 80. Așa am învățat de la consilierul MPU.” Ce înseamnă asta? Nu am putut gestiona situația corect. Nu sunt dependent de alcool, dar nu am băut dimineața, nu am tremurat, nu am mințit. Doar nu m-am gândit niciodată la abstinență.”)</blockquote>
+             <p class="text-gray-700">→ Domnul Mincu nu a reușit încă să reflecteze sincer asupra comportamentului său legat de alcool și să includă în mod adecvat fundalul situației. În acest moment, nu poate fi confirmată o confruntare profundă cu problema consumului de alcool.</p>
+             <p class="text-gray-700">Domnul Mincu a susținut că, în urma unei reduceri treptate a cantității consumate, a renunțat complet la alcool după Revelionul din 2022 și a continuat abstinența până în prezent. A prezentat dovada unei abstinențe documentate pe o perioadă de 12 luni. Această renunțare pare credibilă.</p>
+             <p class="section-title text-blue-700">Măsuri preventive pentru viitor:</p>
+             <p class="text-gray-700">În ceea ce privește măsurile preventive pentru viitor, rămân totuși îndoieli considerabile. Domnul Mincu nu a elaborat încă o strategie suficientă de prevenire a recăderii.</p>
+             <p class="text-gray-700">Este necesar să fie cunoscute cauzele personale și factorii declanșatori ai comportamentului de consum anterior pentru a putea identifica riscurile și a dezvolta strategii individuale de prevenire. Domnul Mincu a menționat motive personale și sociale pentru consumul său:</p>
+             <blockquote class="border-indigo-300 text-indigo-600">(2018 s-a simțit singur în Germania și a găsit un grup cu care consuma alcool pentru a fi acceptat. Ce înseamnă asta? Mama i-a murit, iar când avea 7 ani a murit și tatăl său. A crescut la bunici, s-a simțit izolat la școală și a vrut mereu să demonstreze ceva, să nu arate slăbiciuni. Legătura cu alcoolul: voia să reducă stresul și să uite problemele. Nu voia să rămână singur sau să fie respins.)</blockquote>
+             <p class="text-gray-700">Domnul Mincu a reușit parțial să elaboreze aceste legături, dar nu le-a prezentat încă într-un mod clar, conștientizat și stabil. De asemenea, nu a fost demonstrată o înțelegere suficientă a riscurilor personale de recădere în viitor.</p>
+             <p class="text-gray-700">Domnul Mincu a menționat doar riscuri externe de recădere, de ex. pierderea locului de muncă sau moartea unei persoane apropiate. Însă nu a identificat încă suficient riscurile interne (declanșatori interni precum stresul, suprasolicitarea sau dorința de apartenență). Nu a explicat suficient cum poate gestiona aceste situații fără alcool. El a menționat doar în mod vag:</p>
+             <blockquote class="border-indigo-300 text-indigo-600">„Mă gândesc la ce s-ar putea întâmpla. Dacă aș consuma din nou, s-ar distruge totul. Dacă aș pierde din nou permisul sau locul de muncă…”</blockquote>
+             <p class="text-gray-700">→ O astfel de conștientizare a consecințelor nu este suficientă pentru a garanta o prevenire stabilă a recăderii. Este necesar un plan de acțiune interior, credibil, care să indice cum se poate menține în viitor abstinența de la alcool chiar și în condiții dificile.</p>
+             <p class="text-gray-700">Domnul Mincu nu a elaborat încă un astfel de plan credibil. Comportamente concrete nu au putut fi menționate decât superficial la întrebările directe</p>
+             <blockquote class="border-indigo-300 text-indigo-600">(Exemplu: Timpul pe care îl petrecea înainte cu alcool, acum îl umple cu noul său hobby, citește pe internet și nu se mai gândește la alcool).</blockquote>
+             <p class="text-gray-700">La rezumarea tuturor constatărilor obținute au rămas în continuare îndoieli semnificative privind un comportament adecvat în viitor în ceea ce privește consumul de alcool. Persistă un grad ridicat de neputință și deficite în procesarea problematicii, ceea ce indică o conștientizare insuficientă a problemei.</p>
              <p class="section-title text-blue-700">Reflecție asupra cauzelor comportamentului greșit:</p>
              <p class="text-gray-700">În ceea ce privește cauzele comportamentului său greșit, domnul Mincu nu pare încă bine informat. În ciuda întrebărilor repetate, răspunsurile au rămas la un nivel superficial și liniștitor.</p>
-            <p class="text-gray-700">Comportamentul său greșit este explicat exclusiv prin infracțiunea cunoscută din dosar, domnul Mincu ignorând în mod evident faptele suplimentare pe care le-a recunoscut – și anume condusul repetat fără permis.</p>
-            <p class="text-gray-700">În conversație nu s-a putut distinge clar dacă reflectează cu adevărat asupra sistematicii comportamentului greșit sau doar reproduce conținuturi învățate.</p>
-            <blockquote class="border-indigo-300 text-indigo-600">(Exemplu: De ce a condus atunci în mod repetat fără permis, deși știa că nu are voie? „Nu m-am gândit la consecințe, am ignorat legea… atunci m-am gândit doar la mine, nu și la lege.”)</blockquote>
+             <p class="text-gray-700">Comportamentul său greșit este explicat exclusiv prin infracțiunea cunoscută din dosar, domnul Mincu ignorând în mod evident faptele suplimentare pe care le-a recunoscut – și anume condusul repetat fără permis.</p>
+             <p class="text-gray-700">În conversație nu s-a putut distinge clar dacă reflectează cu adevărat asupra sistematicii comportamentului greșit sau doar reproduce conținuturi învățate.</p>
+             <blockquote class="border-indigo-300 text-indigo-600">(Exemplu: De ce a condus atunci în mod repetat fără permis, deși știa că nu are voie? „Nu m-am gândit la consecințe, am ignorat legea… atunci m-am gândit doar la mine, nu și la lege.”)</blockquote>
              <blockquote class="border-indigo-300 text-indigo-600">„Când am condus, nu m-am gândit la legi. Legile ar fi trebuit să însemne ceva, dar le-am ignorat. Am avut un termen important pe care nu voiam să-l ratez. Nu m-am gândit la consecințe.”</blockquote>
-            <p class="text-gray-700">Este, așadar, necesar să se abordeze mai în profunzime problematica personală de fond.</p>
+             <p class="text-gray-700">Este, așadar, necesar să se abordeze mai în profunzime problematica personală de fond.</p>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="section-heading text-indigo-700 border-indigo-200">Comparație Hincu vs. Mincu (Sumarizat)</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-sm">
+                    <thead>
+                        <tr class="bg-indigo-100">
+                            <th class="border border-indigo-300 p-2 font-semibold">Domeniu</th>
+                            <th class="border border-indigo-300 p-2 font-semibold">Hincu</th>
+                            <th class="border border-indigo-300 p-2 font-semibold">Mincu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Autocritica</td>
+                            <td class="border border-indigo-300 p-2">Deschis: 'Mi-a fost rusine', 'Am fost egoist, desi atunci nu voiam sa recunosc'</td>
+                            <td class="border border-indigo-300 p-2">Invatat: 'Am fost egoist, m-am gandit doar la mine.' (pare invatat pe de rost)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Reflectie</td>
+                            <td class="border border-indigo-300 p-2">Povesteste cum s-a schimbat, a trecut prin lupte interioare</td>
+                            <td class="border border-indigo-300 p-2">Descrie o schimbare, dar fara emotie sau o evolutie autentica</td>
+                        </tr>
+                         <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Risc de recidiva</td>
+                            <td class="border border-indigo-300 p-2">Mentioneaza factori declansatori reali: deces, stres, recunoaste tentatia</td>
+                            <td class="border border-indigo-300 p-2">Spune doar: 'Nu am factori declansatori' sau 'Beau doar apa'</td>
+                        </tr>
+                         <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Strategii</td>
+                            <td class="border border-indigo-300 p-2">Are strategii personale multiple: comunica cu partenera, iese afara, tine jurnal</td>
+                            <td class="border border-indigo-300 p-2">Doar: 'Am un hobby. Citesc pe internet.' - prea putin si vag</td>
+                        </tr>
+                         <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Conflicte</td>
+                            <td class="border border-indigo-300 p-2">Vorbeste deschis despre certuri, nesiguranta in terapie</td>
+                            <td class="border border-indigo-300 p-2">Foarte plat. Conflictele sunt doar mentionate ('ne-am certat')</td>
+                        </tr>
+                         <tr>
+                            <td class="border border-indigo-300 p-2 font-medium">Stilul exprimarii</td>
+                            <td class="border border-indigo-300 p-2">Personal, aproape narativ ('Imi amintesc momentul cand...')</td>
+                            <td class="border border-indigo-300 p-2">Tehnic, factual ('Am invatat ca...')</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
