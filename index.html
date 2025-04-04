@@ -48,9 +48,25 @@
         th {
             background-color: #e0e7ff; /* indigo-100 */
         }
+        /* Stiluri pentru secțiunea de critică */
+        .critique-point {
+             margin-bottom: 1rem;
+             padding: 0.75rem; /* p-3 */
+             border: 1px solid #e5e7eb; /* border-gray-200 */
+             border-radius: 0.375rem; /* rounded */
+             background-color: #f9fafb; /* bg-slate-50 */
+        }
+        .critique-heading {
+            font-weight: 600; /* font-semibold */
+            font-size: 0.875rem; /* text-sm */
+            margin-bottom: 0.25rem;
+        }
+         .critique-text {
+             margin-bottom: 0.5rem; /* mb-2 */
+         }
     </style>
 </head>
-<body class="bg-slate-50 p-4 md:p-8">
+<body class="bg-slate-100 p-4 md:p-8">
 
     <div class="max-w-3xl mx-auto bg-white p-6 md:p-10 rounded-lg shadow-lg">
 
@@ -134,7 +150,7 @@
         </div>
 
          <div class="mb-6">
-            <h2 class="section-heading text-indigo-700 border-indigo-200">Fazit / Concluzie</h2>
+            <h2 class="section-heading text-indigo-700 border-indigo-200">Fazit / Concluzie Expert</h2>
              <p class="text-gray-700">Clientul a încercat să răspundă la întrebări, însă a lipsit profunzimea. Totul pare învățat pe de rost, fără să existe o reflecție personală, sinceră și credibilă. Declarațiile nu par complet veridice și nici suficient de stabile pentru o prognoză favorabilă la evaluarea psihologică MPU.</p>
              <p class="section-title text-blue-700">Despre întrebările legate de consumul de alcool:</p>
              <p class="text-gray-700">Mai întâi trebuie verificat în ce măsură datele colectate pot fi supuse unei evaluări. În acest scop, este necesară o disponibilitate adecvată de cooperare și o deschidere din partea persoanei examinate, pentru a putea obține informațiile suplimentare esențiale. Datele colectate trebuie să fie coerente, plauzibile, să se alinieze cunoștințelor științifice, experienței consolidate și să fie în concordanță cu conținutul dosarului.</p>
@@ -217,6 +233,65 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="section-heading text-indigo-700 border-indigo-200">Reevaluare / Critica Fazit-ului</h2>
+
+            <div class="critique-point">
+                <p class="critique-heading text-red-600">Critica expertului:</p>
+                <p class="critique-text text-gray-700">❌ „Nu a recunoscut că a condus de mai multe ori fără permis”</p>
+                <p class="critique-heading text-green-600">Ce a spus de fapt Mincu:</p>
+                <p class="critique-text text-gray-700">✅ A recunoscut clar: La întrebarea: „De ce a condus atunci mai des fără permis, deși știa că nu are voie?” → A răspuns: „Am ignorat consecințele și nu am respectat legea.”</p>
+                <p class="critique-heading text-blue-600">Evaluare / Comentariu:</p>
+                <p class="text-gray-700">🔎 Comentariu: Aceasta este o recunoaștere clară a faptei. Afirmație incorectă în raport</p>
+            </div>
+
+            <div class="critique-point">
+                <p class="critique-heading text-red-600">Critica expertului:</p>
+                <p class="critique-text text-gray-700">❌ „Nu a menționat valori interioare sau reflecție reală”</p>
+                <p class="critique-heading text-green-600">Ce a spus de fapt Mincu:</p>
+                <p class="critique-text text-gray-700">✅ A vorbit despre: – Pierderea ambilor părinți în copilărie – Singurătate și izolare în Germania – Presiunea de a părea puternic – Frica de respingere</p>
+                <p class="critique-heading text-blue-600">Evaluare / Comentariu:</p>
+                <p class="text-gray-700">🔎 Comentariu: Acestea sunt teme profunde, personale, care reflectă o introspecție reală. Ignorat sau subestimat de expert</p>
+            </div>
+
+            <div class="critique-point">
+                <p class="critique-heading text-red-600">Critica expertului:</p>
+                <p class="critique-text text-gray-700">❌ „Nu a menționat factori declanșatori sau riscuri de recidivă”</p>
+                <p class="critique-heading text-green-600">Ce a spus de fapt Mincu:</p>
+                <p class="critique-text text-gray-700">✅ A spus clar: – Moartea unei persoane apropiate – Pierderea locului de muncă – Situații de stres sever → A adăugat: „În astfel de momente nu vreau să fug, ci să vorbesc cu cineva.”</p>
+                <p class="critique-heading text-blue-600">Evaluare / Comentariu:</p>
+                <p class="text-gray-700">🔎 Evaluare greșită a expertului</p>
+            </div>
+
+             <div class="critique-point">
+                <p class="critique-heading text-red-600">Critica expertului:</p>
+                <p class="critique-text text-gray-700">❌ „A menționat doar strategii superficiale”</p>
+                <p class="critique-heading text-green-600">Ce a spus de fapt Mincu:</p>
+                <p class="critique-text text-gray-700">✅ A explicat: – Nu mai păstrează legătura cu vechii prieteni – Are un nou cerc social stabil – Este într-o relație serioasă – Vorbește despre stres și se plimbă în aer liber pentru a-l gestiona</p>
+                <p class="critique-heading text-blue-600">Evaluare / Comentariu:</p>
+                <p class="text-gray-700">🔎 Evaluare incompletă, reducționistă</p>
+            </div>
+
+             <div class="critique-point">
+                <p class="critique-heading text-red-600">Critica expertului:</p>
+                <p class="critique-text text-gray-700">❌ „Totul pare învățat pe de rost, fără profunzime”</p>
+                 <p class="critique-heading text-yellow-600">Evaluare / Comentariu:</p>
+                 <p class="text-gray-700">🔸 Parțial adevărat – Unele răspunsuri sunt formulate general („Am fost egoist...”) Dar: alte părți sunt clare, sincere și detaliate. Parțial adevărat – se poate îmbunătăți ușor</p>
+            </div>
+
+            <div class="mt-6">
+                <p class="font-semibold text-lg text-green-700">✅ Concluzie:</p>
+                <p class="text-gray-800">Evaluarea a fost parțial nedreaptă.</p>
+                <p class="text-gray-800">Mincu a dat răspunsuri consistente, realiste și cu elemente emoționale, dar acestea au fost:</p>
+                <ul class="list-disc list-inside text-gray-800 ml-4">
+                    <li>Fie întrerupte (cum ai observat),</li>
+                    <li>Fie reduse la formulări standard de către expertă,</li>
+                    <li>Sau pur și simplu neglijate în interpretarea finală.</li>
+                </ul>
+            </div>
+
         </div>
     </div>
 
